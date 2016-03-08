@@ -78,6 +78,10 @@
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PaperCoversRock" translatesAutoresizingMaskIntoConstraints="NO" id="Mn3-GN-lBS">
                                 <rect key="frame" x="260" y="96" width="80" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="5xu-ne-c17"/>
+                                    <constraint firstAttribute="height" constant="60" id="Swz-1m-Tk0"/>
+                                </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KUj-Wl-sNU">
                                 <rect key="frame" x="265" y="512" width="71" height="30"/>
@@ -103,10 +107,14 @@
                             <constraint firstItem="Mn3-GN-lBS" firstAttribute="top" secondItem="EV3-jC-WrU" secondAttribute="bottom" constant="76" id="rUx-KC-hb4"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="imageView" destination="Mn3-GN-lBS" id="ZDS-0w-q6Y"/>
+                        <outlet property="label" destination="nKw-pC-ITy" id="fja-Mz-hn0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Tj-sP-oz3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1273" y="490"/>
+            <point key="canvasLocation" x="1272" y="475"/>
         </scene>
     </scenes>
     <resources>
