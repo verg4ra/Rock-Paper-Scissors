@@ -20,6 +20,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GlV-ws-i0G">
                                 <rect key="frame" x="282" y="284" width="37" height="32"/>
                                 <state key="normal" image="paper"/>
+                                <connections>
+                                    <action selector="choosePaper" destination="BYZ-38-t0r" eventType="touchUpInside" id="IKN-HR-2vM"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RP9-5x-aOQ">
                                 <rect key="frame" x="410" y="284" width="37" height="32"/>
@@ -31,6 +34,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ccU-79-S1p">
                                 <rect key="frame" x="154" y="284" width="37" height="32"/>
                                 <state key="normal" image="rock"/>
+                                <connections>
+                                    <action selector="chooseRock" destination="BYZ-38-t0r" eventType="touchUpInside" id="ffj-p1-wd0"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Let's Play" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="her-ev-srk">
                                 <rect key="frame" x="264" y="530" width="73" height="21"/>
@@ -61,7 +67,7 @@
         <!--Second View Controller-->
         <scene sceneID="gKP-Aq-s3R">
             <objects>
-                <viewController id="iSH-fT-sRc" customClass="SecondViewController" customModule="Rock_Paper_Scissors" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SecondViewController" id="iSH-fT-sRc" customClass="SecondViewController" customModule="Rock_Paper_Scissors" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="EV3-jC-WrU"/>
                         <viewControllerLayoutGuide type="bottom" id="2lf-5C-gsw"/>
@@ -76,6 +82,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KUj-Wl-sNU">
                                 <rect key="frame" x="265" y="512" width="71" height="30"/>
                                 <state key="normal" title="Play Again"/>
+                                <connections>
+                                    <action selector="dismiss" destination="iSH-fT-sRc" eventType="touchUpInside" id="GNb-lz-5vc"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Paper covers rock. You win!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nKw-pC-ITy">
                                 <rect key="frame" x="195" y="289" width="211" height="21"/>

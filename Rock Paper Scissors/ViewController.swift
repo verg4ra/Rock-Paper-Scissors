@@ -20,6 +20,13 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func chooseRock() {
+        let controller = self.storyboard?.instantiateViewControllerWithIdentifier("SecondViewController") as! SecondViewController
+        presentViewController(controller, animated: true, completion: nil)
+    }
 
+    @IBAction func choosePaper() {
+        performSegueWithIdentifier("paperSegue", sender: self)
+    }
 }
 
