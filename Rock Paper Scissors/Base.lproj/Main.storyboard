@@ -16,11 +16,46 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GlV-ws-i0G">
+                                <rect key="frame" x="282" y="284" width="37" height="32"/>
+                                <state key="normal" image="paper"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RP9-5x-aOQ">
+                                <rect key="frame" x="410" y="284" width="37" height="32"/>
+                                <state key="normal" image="scissors"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ccU-79-S1p">
+                                <rect key="frame" x="154" y="284" width="37" height="32"/>
+                                <state key="normal" image="rock"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Let's Play" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="her-ev-srk">
+                                <rect key="frame" x="264" y="530" width="73" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="GlV-ws-i0G" firstAttribute="leading" secondItem="ccU-79-S1p" secondAttribute="trailing" constant="91" id="1aw-EV-CbP"/>
+                            <constraint firstItem="GlV-ws-i0G" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3CI-Jj-HQt"/>
+                            <constraint firstItem="her-ev-srk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QhM-tn-d1h"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="her-ev-srk" secondAttribute="bottom" constant="49" id="RJd-HW-w8n"/>
+                            <constraint firstItem="GlV-ws-i0G" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Yey-Lp-BTF"/>
+                            <constraint firstItem="RP9-5x-aOQ" firstAttribute="leading" secondItem="GlV-ws-i0G" secondAttribute="trailing" constant="91" id="hQq-Mo-ABi"/>
+                            <constraint firstItem="ccU-79-S1p" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="jfs-Xk-62H"/>
+                            <constraint firstItem="RP9-5x-aOQ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="uxe-gr-Orc"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="paper" width="37" height="32"/>
+        <image name="rock" width="37" height="32"/>
+        <image name="scissors" width="37" height="32"/>
+    </resources>
 </document>
