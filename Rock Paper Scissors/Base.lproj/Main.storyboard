@@ -24,6 +24,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RP9-5x-aOQ">
                                 <rect key="frame" x="410" y="284" width="37" height="32"/>
                                 <state key="normal" image="scissors"/>
+                                <connections>
+                                    <segue destination="iSH-fT-sRc" kind="show" identifier="scissorsSegue" id="cG7-1j-7Mw"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ccU-79-S1p">
                                 <rect key="frame" x="154" y="284" width="37" height="32"/>
@@ -48,14 +51,62 @@
                             <constraint firstItem="RP9-5x-aOQ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="uxe-gr-Orc"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <segue destination="iSH-fT-sRc" kind="show" identifier="paperSegue" id="eGY-wB-DrD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
+        <!--Second View Controller-->
+        <scene sceneID="gKP-Aq-s3R">
+            <objects>
+                <viewController id="iSH-fT-sRc" customClass="SecondViewController" customModule="Rock_Paper_Scissors" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="EV3-jC-WrU"/>
+                        <viewControllerLayoutGuide type="bottom" id="2lf-5C-gsw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ira-y5-AcN">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PaperCoversRock" translatesAutoresizingMaskIntoConstraints="NO" id="Mn3-GN-lBS">
+                                <rect key="frame" x="260" y="96" width="80" height="60"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KUj-Wl-sNU">
+                                <rect key="frame" x="265" y="512" width="71" height="30"/>
+                                <state key="normal" title="Play Again"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Paper covers rock. You win!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nKw-pC-ITy">
+                                <rect key="frame" x="195" y="289" width="211" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="nKw-pC-ITy" firstAttribute="centerX" secondItem="ira-y5-AcN" secondAttribute="centerX" id="5CN-a0-RKd"/>
+                            <constraint firstItem="nKw-pC-ITy" firstAttribute="centerY" secondItem="ira-y5-AcN" secondAttribute="centerY" id="GRi-0q-dtc"/>
+                            <constraint firstItem="2lf-5C-gsw" firstAttribute="top" secondItem="KUj-Wl-sNU" secondAttribute="bottom" constant="58" id="VtB-jo-C5E"/>
+                            <constraint firstItem="Mn3-GN-lBS" firstAttribute="centerX" secondItem="ira-y5-AcN" secondAttribute="centerX" id="d5u-Ko-JkS"/>
+                            <constraint firstItem="KUj-Wl-sNU" firstAttribute="centerX" secondItem="ira-y5-AcN" secondAttribute="centerX" id="h4d-az-2fU"/>
+                            <constraint firstItem="Mn3-GN-lBS" firstAttribute="top" secondItem="EV3-jC-WrU" secondAttribute="bottom" constant="76" id="rUx-KC-hb4"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Tj-sP-oz3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1273" y="490"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="PaperCoversRock" width="80" height="60"/>
         <image name="paper" width="37" height="32"/>
         <image name="rock" width="37" height="32"/>
         <image name="scissors" width="37" height="32"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="cG7-1j-7Mw"/>
+    </inferredMetricsTieBreakers>
 </document>
